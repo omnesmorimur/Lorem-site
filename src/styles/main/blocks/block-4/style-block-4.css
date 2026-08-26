@@ -1,5 +1,4 @@
-@import url(../../base/variables.css);
-
+@import url(../../../base/variables.css);
 .block-4 {
     background-color: var(--bg-orange);
     max-width: 100dvw;

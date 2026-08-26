@@ -1,3 +1,5 @@
+@import url(../../../base/variables.css);
+
 .block-2x5 {
     background-color: var(--main-text-white);
     max-width: 100dvw;

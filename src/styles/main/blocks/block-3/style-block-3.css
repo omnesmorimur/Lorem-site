@@ -1,4 +1,4 @@
-@import url(../../base/variables.css);
+@import url(../../../base/variables.css);
 
 .block-3 {
     background-color: var(--bg-azure);
