@@ -1,0 +1,44 @@
+@import url(../base/variables.css);
+@import url(blocks/block-1/style-block-1.css);
+@import url(blocks/block-2/style-block-2.css);
+@import url(blocks/block-3/style-block-3.css);
+@import url(blocks/block-4/style-block-4.css);
+
+.main {
+    padding-top: 100px;
+    scroll-behavior: smooth;
+
+    @media (max-width: 539px) {
+        padding-top: 60px;
+    }
+
+    .content-block {
+        max-width: 1280px;
+        width: 100%;
+        margin-inline: auto;
+
+        @media (max-width: 1119px) {
+            padding-inline: 1em;
+        }
+
+        @media (max-width: 349px) {
+            padding-inline: 0.5em;
+        }
+    }
+
+    .decor {
+        margin: auto;
+        max-width: 1980px;
+        background-image: url(../../images/dots.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+
+        @media (max-width: 739px) {}
+    }
+}
+
+.main .content-block {
+    max-width: 100dvw;
+    width: 100%;
+    margin-inline: 0;
+}

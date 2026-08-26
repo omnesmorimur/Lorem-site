@@ -1,0 +1,54 @@
+button {
+    background: var(--bg-orange);
+    border: 0.19rem solid black;
+    color: rgb(0, 0, 0);
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 0.313rem;
+    margin-bottom: 0.313rem;
+    gap: 0 clamp(0.5625rem, 0.49rem + 0.34vw, 0.75rem);
+    font-family: 'Roboto Condensed';
+    font-size: clamp(1.125rem, 0.98rem + 0.69vw, 1.5rem);
+    font-weight: 700;
+    padding: 10px 5px;
+    line-height: 1;
+    text-decoration: none;
+    text-align: left;
+    text-transform: uppercase;
+    /* flex-shrink: 0; */
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0.313rem 0.313rem 0px 0px var(--main-text-black);
+    
+    a {
+        color: var(--main-text-black);
+    }
+
+    @media (max-width:330px) {
+        margin-right: 0;
+        margin-bottom: 0;
+        gap: 0;
+
+    }
+}
+
+.svg-button {
+    margin-bottom: .125rem;
+
+    @media (max-width: 350px) {
+        margin-left: .25rem;
+    }
+}
+
+
+@media (hover:hover) {
+    button:hover {
+        background: var(--bg-azure);
+    }
+}
+@media (hover:none) {
+    button:active {
+        background: var(--bg-azure);
+    }
+}

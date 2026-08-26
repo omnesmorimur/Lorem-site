@@ -1,0 +1,63 @@
+@import url(../../../base/variables.css);
+
+.block-1 {
+    background-color: var(--bg-yellow);
+    max-width: 100dvw;
+    width: 100%;
+    border-bottom: 3px solid black;
+    padding-bottom: 1rem;
+
+    .calcH {
+        height: calc(100dvh - 100px);
+        padding-inline: var(--space-padding);
+
+        @media (max-width: 1119px) {
+            height: auto;
+            padding-inline: 0;
+        }
+
+        .title {
+            padding: var(--title-padding);
+
+            @media (max-width: 539px) {
+                padding-top: 2.125rem;
+            }
+        }
+
+        .block-text {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+
+            @media (max-width: 739px) {
+                display: block;
+            }
+
+            .columns-1 {
+                padding-bottom: 1rem;
+            }
+        }
+    }
+}
+
+.block-1x5 {
+    background-color: var(--main-text-white);
+    max-width: 100dvw;
+    width: 100%;
+    height: 2rem;
+
+    .table {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        margin-inline: auto;
+        max-width: 1280px;
+        gap: var(--gutter);
+
+        .dark-gb-span {
+            background-color: var(--main-text-black);
+            display: block;
+            aspect-ratio: 1;
+        }
+    }
+}
+

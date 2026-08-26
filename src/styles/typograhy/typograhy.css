@@ -1,0 +1,64 @@
+@import url(../base/variables.css);
+.font8 {
+    font-family: 'Roboto';
+}
+
+@font-face {
+    font-family: "Basement Grotesque";
+    src: url("./fonts/BasementGrotesque-Black_v1.202.woff2") format("woff2"),
+        url("./fonts/BasementGrotesque-Black_v1.202.woff") format("woff"),
+        url("./fonts/BasementGrotesque-Black_v1.202.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+h1 {
+    font-size: clamp(2.519375rem, 1.74rem + 3.79vw, 4.5775rem);
+    color: var(--main-text-black);
+    text-transform: uppercase;
+    line-height: 1.05;
+    font-weight: 600;
+    font-family: var(--text-basementG);
+}
+
+p {
+    color: var(--main-text-black);
+    font-size: clamp(1.25rem, 1.1477rem + 0.4545vw, 1.875rem);
+    line-height: 1.05;
+    font-weight: 400;
+    font-family: var(--content-text);
+
+}
+h2 {
+    font-size: clamp(1rem, 0.9182rem + 0.3636vw, 1.5rem);
+}
+h2::first-letter {
+    font-weight: bold;   
+}
+
+h3 {
+    font-family: var(--text-inter);
+    font-size: 1.125rem;
+    color: var(--main-text-black);
+    font-weight: 400;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--main-text-black);
+}
+
+strong {
+    font-weight: bold;
+}
+
+.number {
+    font-family: "Basement Grotesque";
+    font-weight: bold;
+}

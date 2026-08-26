@@ -1,0 +1,38 @@
+@import url(../base/variables.css);
+
+footer {
+
+  background: var(--main-text-white);
+  max-height: fit-content;
+
+  .wrapper {
+    padding: var(--title-padding);
+
+
+
+    .flex-buttons {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      margin-inline: auto;
+      display: flex;
+      flex-direction: column;
+      gap: clamp(1rem, 0.9386rem + 0.2727vw, 1.375rem);
+
+
+      .footer-button {
+        transform: rotate(5deg);
+        transition: transform 0.3s ease;
+      }
+
+      .footer-button.zxc {
+        transform: rotate(-5deg);
+        transition: transform 0.3s ease;
+      }
+
+      .footer-button.rotated {
+        transform: rotate(0deg);
+      }
+    }
+  }
+}

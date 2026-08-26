@@ -1,0 +1,62 @@
+:root {
+    /* backgrounds colors */
+    --bg-orange: rgb(244, 106, 42);
+    --bg-yellow: rgb(249, 200, 14);
+    --bg-azure: rgb(67, 188, 205);
+    --bg-purple: rgb(102, 46, 155);
+
+    /* shadow */
+    --shadow-white: 1px 1px 1px white,
+        -1px -1px 1px white, -1px -1px 1px white, 1px 1px 1px white;
+
+    --shadow-black2: 1px 1px 1px rgb(0, 0, 0),
+        -1px -1px 1px rgb(0, 0, 0), -1px -1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
+
+    --shadow-black: -1px 1px 1px rgb(0, 0, 0),
+        1px -1px 1px rgb(0, 0, 0);
+
+    /* typograhy */
+    --main-title-text: 'Russo One';
+    --content-text: 'Montserrat';
+    --button-text: 'Roboto Condensed';
+    --text-inter: 'Inter';
+    --text-basementG: "Basement Grotesque";
+    --main-text-black: rgb(0, 0, 0);
+    --main-text-white: rgb(255, 255, 255);
+
+    --font-size-p-clamp: clamp(1.321875rem, 1.11rem + 1.02vw, 1.875rem);
+
+    /* clamps */
+    --space-padding: clamp(1rem, 0.8364rem + 0.7273vw, 2rem);
+    --space-s-l: clamp(1.125rem, 0.41rem + 3.45vw, 3rem);
+    --gutter: var(--space-s-l);
+
+    /* paddings */
+    --title-padding: clamp(2rem, 1.0182rem + 4.3636vw, 8rem) 0 clamp(1rem, 0.5091rem + 2.1818vw, 4rem) 0;
+}
+
+/* global */
+::selection {
+    background: var(--main-text-black);
+    color: var(--bg-yellow);
+}
+
+html {
+    font-size: 16px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    height: 100dvh;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: var(--space-padding);
+
+    @media (max-width: 1001px) {
+        height: auto;
+        padding-bottom: 2em;
+        padding-inline: 0;
+    }
+}

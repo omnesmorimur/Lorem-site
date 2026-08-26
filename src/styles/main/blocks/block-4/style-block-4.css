@@ -1,0 +1,103 @@
+@import url(../../base/variables.css);
+
+.block-4 {
+    background-color: var(--bg-orange);
+    max-width: 100dvw;
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid black;
+
+    .wrapper {
+        height: auto;
+        padding-bottom: clamp(1rem, 0.6727rem + 1.4545vw, 3rem);
+
+        .title {
+            padding: var(--title-padding);
+
+            h1 {
+                text-transform: none;
+            }
+        }
+
+        .header-text {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 70%;
+
+            @media (max-width:800px) {
+                width: 100%;
+            }
+
+            p {
+                font-family: 'Inter';
+                font-size: var(--font-size-p-clamp);
+                line-height: 1.5;
+                font-weight: 500;
+
+                .font {
+                    font-family: "Basement Grotesque";
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .flex-content {
+            padding-top: 3rem;
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 1rem;
+            justify-content: space-between;
+
+            @media (max-width: 1119px) {
+                padding-inline: 0;
+            }
+
+            @media (max-width: 899px) {
+                padding-inline: 0;
+                flex-direction: column-reverse;
+                padding-top: 1rem;
+                width: 100%;
+            }
+
+            .flex-text {
+                overflow-x: visible;
+                width: 65%;
+                font-size: 1.5rem;
+
+                @media (max-width: 899px) {
+                    width: 100%;
+                }
+
+                p {
+                    line-height: 2.4rem;
+
+                    @media (max-width: 539px) {
+                        font-weight: 500;
+                        line-height: 1.6rem;
+                    }
+
+                    a {
+                        color: currentColor;
+                        text-decoration: underline;
+                    }
+
+                    a:hover {
+                        text-underline-offset: 0.3ex;
+                    }
+
+                    a:visited {
+                        color: var(--main-text-black);
+                    }
+                }
+            }
+
+            .flex-svg {
+                background-color: beige;
+                max-width: 300px;
+                height: 200px;
+                width: 100%;
+            }
+        }
+    }
+}
